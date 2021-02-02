@@ -1,0 +1,93 @@
+.movie_info {
+  border: 20px solid #eee;
+  border-bottom: 10px solid #eee;
+  box-sizing: border-box;
+  padding: 0 !important;
+  position: relative;
+  background: #fff;
+  .content {
+    width: 100%;
+    background: #eee;
+    .poster {
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desc {
+      padding: 20px;
+      text-align: left;
+      color: #999;
+      background: #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #3e4555;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .rating {
+        color: #999;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-between;
+        i {
+          color: #ffc741;
+          display: inline-block;
+          vertical-align: 2px;
+          font-size: 13px;
+        }
+        .genre {
+          width: 60%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: right;
+          font-size: 14px;
+        }
+      }
+      .overview {
+        width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        word-break: break-word;
+        overflow: hidden;
+        color: #948a99;
+        font-weight: 200;
+        margin-top: 10px;
+      }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button,a {
+          background: #9352b3;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: 900;
+          padding: 5px 10px;
+        }
+        a{
+          display: inline-block;
+        }
+        a:hover{
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

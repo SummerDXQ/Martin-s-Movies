@@ -1,0 +1,54 @@
+.header {
+  height: 100px;
+  background: #fff;
+  background: linear-gradient(rgb(161, 31, 60) 0%, rgb(147, 82, 179) 100%);
+  padding: 0 100px;
+  color: #fff;
+  box-sizing: border-box;
+  .row {
+    padding: 0;
+  }
+  .column {
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+
+    input {
+      border: 1px solid #fff;
+      height: 30px;
+      color: #1c1c1c;
+      padding: 0 5px;
+      background: #fff;
+      border-radius: 20px;
+      text-align: center;
+      &::placeholder {
+        color: #ccc;
+        text-align: center;
+      }
+    }
+    select {
+      height: 30px;
+      border: none;
+      outline: none;
+      // border-radius: 5px;
+    }
+    button {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    height: 150px;
+    padding: 15px;
+    .column {
+      line-height: 40px;
+    }
+    .search{
+      line-height: 120px;
+    }
+  }
+}

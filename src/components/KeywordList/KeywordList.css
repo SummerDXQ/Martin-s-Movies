@@ -1,0 +1,21 @@
+.keyword_list {
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  color: #1c1c1c;
+  top: 64px;
+  left: 48px;
+}
+
+.keyword_list ul {
+  height: 200px;
+  width: 180px;
+  margin: 0;
+  overflow: auto;
+}
+
+.keyword_list ul li {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+}
